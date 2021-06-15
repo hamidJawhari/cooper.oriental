@@ -273,6 +273,8 @@ a {
   background-color: var(--mainColor);
   text-align: center;
   padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 50px;
 }
 .features .title {
@@ -282,7 +284,6 @@ a {
   background-color: white;
 }
 .feat {
-  margin: 0 -2px;
   padding: 80px;
   box-sizing: border-box;
   cursor: pointer;
