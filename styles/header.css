@@ -1,0 +1,129 @@
+* {
+	padding: 0;
+	margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	font-family: var(--mainFont);
+}
+:root {
+  --mainColor: #00af91;
+	--mainFont: 'Cairo' , sans-serif;
+}
+header {
+	font-family: 'Montserrat', sans-serif;
+	background-color: var(--mainColor);
+}
+header .header {
+	padding: 0px 30px;
+}
+.header .header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	color: white;
+}
+.header-content .logo {
+	font-size: 24px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+}
+.header-content .logo span {
+	font-size: 15px;
+	font-weight: normal;
+	margin-left: 5px;
+}
+.header .header-content ul {
+	display: none;
+	list-style: none;
+	margin-top: 40px;
+}
+.header-content ul li {
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+.header-content ul li a  {
+	display: block;
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	font-size: 14px;
+	white-space: nowrap;
+}
+.header-content ul li a:hover {
+	color: white;
+}
+.header-content i {
+	cursor: pointer;
+	font-size: 16px;
+	position: relative;
+	z-index: 100;
+}
+.header-content .fa-times {
+	display: none;
+}
+@media (min-width:500px) {
+	.header-content i {
+		font-size: 25px;
+	}
+	.header-content .logo {
+		font-size: 30px;
+		letter-spacing: 4px;
+	}
+	.header-content .logo span {
+		letter-spacing: 10px;
+	}
+	.header-content ul li {
+		margin-bottom: 30px;
+	}
+}
+@media (min-width:768px) and (max-width:800px) {
+	.header-content ul li a {
+		font-size: 11px;
+	}
+}
+@media (min-width:768px) {
+	.header-content i {
+		display: none;
+	}
+	.header .header-content ul {
+		display: flex;
+	}
+	.header .header-content ul li:not(:last-of-type) {
+		margin-right: 35px;
+	}
+}	
+@media (min-width:992px) {
+.header .header-content ul li:not(:last-of-type) {
+	margin-right: 55px;
+	}
+}
+@media (min-width:1200px) {
+	.header .header-content ul li:not(:last-of-type) {
+		margin-right: 70px;
+	}
+}
+.hide {
+	display: none !important;
+}
+.show {
+	display: block !important;
+	position: fixed !important;
+	right: 30px;
+}
+.show-list {
+	display: flex !important;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, .8);
+	position: fixed;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: -20px;
+	z-index: 40;
+	margin-top: 0 !important;
+	padding: 0;
+	justify-content: center;
+	text-align: center;
+}

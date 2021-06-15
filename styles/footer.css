@@ -1,0 +1,36 @@
+:root {
+	--mainFont: 'Cairo' , sans-serif;
+}
+.footer {
+  background-color: #161616;
+  color: white;
+  padding: 10px 70px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-family: var(--mainFont);
+}
+.footer span {
+  white-space: nowrap;
+}
+.tel {
+  margin-left: 40px;
+}
+@media (min-width:500px) {
+  .footer {
+    font-size: 15px;
+  }
+  .tel {
+    margin-left: 60px;
+  }
+}
+@media (min-width:700px) {
+  .footer {
+    font-size: 18px;
+  }
+  .tel {
+    margin-left: 100px;
+  }
+}
