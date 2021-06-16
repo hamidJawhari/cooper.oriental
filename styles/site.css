@@ -284,7 +284,7 @@ a {
   background-color: white;
 }
 .feat {
-  padding: 80px;
+  padding: 60px 40px;
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.3s linear;
@@ -292,6 +292,7 @@ a {
   color: white;
   position: relative;
   z-index: 10;
+  direction: rtl;
 }
 .feat::before {
   content: "";
@@ -318,35 +319,42 @@ a {
   margin-bottom: 30px;
 }
 .feat h2 {
-  font-size: 18px;
+  font-size: 24px;
   text-transform: uppercase;
-  font-weight: 500;
-  margin: 0;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 .feat p {
+  text-align: center;
   font-size: 15px;
-  font-weight: 500;
+  line-height: 1.8;
+}
+@media (max-width: 768px) {
+  .feat p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 /* end features */
-.test .imgs {
+.parts .imgs {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media (max-width: 576px) {
-  .test img {
-    width: 150px;
+  .parts img {
+    width: 70px;
     margin-right: 10px;
   }
 }
 @media screen and (min-width: 500px) {
-  .test img {
+  .parts img {
     margin-bottom: 20px;
     margin-left: 10px;
   }
 }
 @media screen and (min-width: 992px) {
-  .text img {
+  .parts img {
     margin-left: 20px;
   }
 }
