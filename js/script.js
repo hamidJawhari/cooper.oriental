@@ -48,8 +48,8 @@ console.log(sectionTop)
 function showItem() {
   let contentText  = document.querySelector(".content-text");
   let contentTitle = document.querySelector(".content-title");
-  console.log(document.documentElement.scrollTop)
-  if( document.documentElement.scrollTop >  sectionTop){
+  let point = 150; 
+  if( section.getBoundingClientRect().top < innerHeight - point ){
     contentTitle.classList.add("ikhtafi");
     contentText.classList.add("ikhtafi");
   }
