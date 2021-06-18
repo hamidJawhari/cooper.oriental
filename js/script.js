@@ -42,15 +42,16 @@ function fixedNav() {
     nav.classList.remove("fixed-nav");
   }
 }
-let section = document.querySelector(".section-img");
-sectionTop  = section.getBoundingClientRect().top;
-console.log(sectionTop)
 function showItem() {
   let contentText  = document.querySelector(".content-text");
   let contentTitle = document.querySelector(".content-title");
-  let point = 150; 
-  if( section.getBoundingClientRect().top < innerHeight - point ){
+  let point = 200;
+  console.log(contentTitle.getBoundingClientRect().top);
+  console.log(innerHeight);
+  console.log(innerHeight - point) 
+  if(contentTitle.getBoundingClientRect().top < innerHeight - point){
     contentTitle.classList.add("ikhtafi");
     contentText.classList.add("ikhtafi");
+    console.log("hamid hamid hamid hamid hamid hamid hamid")
   }
 }
