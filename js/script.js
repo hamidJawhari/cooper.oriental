@@ -46,8 +46,10 @@ function showItem() {
   let contentText  = document.querySelector(".content-text");
   let contentTitle = document.querySelector(".content-title");
   let section      = document.querySelector(".section-img");
+  console.log(contentText.clientTop);
   console.log(section.getBoundingClientRect().top)
-  if(section.getBoundingClientRect().top <  250){
+  console.log(innerHeight)
+  if(section.getBoundingClientRect().top <  innerHeight){
     contentTitle.classList.add("ikhtafi");
     contentText.classList.add("ikhtafi");
     console.log("hamid zeeen");
