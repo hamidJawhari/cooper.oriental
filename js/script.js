@@ -30,3 +30,11 @@ links.forEach(e => {
     openList.classList.remove("hide");
   })
 })
+onscroll = function() {
+  let nav = document.querySelector("header");
+  if(document.documentElement.scrollTop > nav.getBoundingClientRect().height){
+    nav.classList.add("fixed-nav")
+  }else {
+    nav.classList.remove("fixed-nav")
+  }
+}

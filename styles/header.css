@@ -13,6 +13,7 @@
 header {
 	font-family: 'Montserrat', sans-serif;
 	background-color: var(--mainColor);
+	color: white;
 }
 header .header {
 	padding: 0px 30px;
@@ -22,7 +23,6 @@ header .header {
 	justify-content: space-between;
 	align-items: center;
 	height: 100px;
-	color: white;
 }
 .header-content .logo {
 	font-size: 24px;
@@ -126,4 +126,13 @@ header .header {
 	padding: 0;
 	justify-content: center;
 	text-align: center;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  color: var(--mainColor);
+	z-index: 1000;
+	width: 100%;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }

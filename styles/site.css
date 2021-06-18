@@ -95,9 +95,14 @@ a {
 }
 .s-box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   position: relative;
   gap: 20px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 15px;
+  margin: 10px;
 }
 .s-box {
   display: flex;
@@ -179,10 +184,18 @@ a {
   .carousel-caption p {
     font-size: 18px;
   }
+  .carousel-control-next,
+.carousel-control-prev {
+  width: 20px;
+}
 }
 @media (min-width: 768px) {
   .carousel-caption p {
     font-size: 25px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 25px;
   }
 }
 @media (min-width: 992px) {
@@ -191,6 +204,9 @@ a {
   .carousel-caption p {
     font-size: 35px;
   }
+}
+.carousel-indicators {
+  display: none;
 }
 /* end services */
 
@@ -273,6 +289,7 @@ a {
   background-color: var(--mainColor);
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 80px;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 50px;
@@ -284,7 +301,7 @@ a {
   background-color: white;
 }
 .feat {
-  padding: 60px 40px;
+  padding: 60px 20px;
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.3s linear;
@@ -331,8 +348,8 @@ a {
 }
 @media (max-width: 768px) {
   .feat p {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 /* end features */
@@ -354,7 +371,4 @@ a {
   }
 }
 @media screen and (min-width: 992px) {
-  .parts img {
-    margin-left: 20px;
-  }
 }
