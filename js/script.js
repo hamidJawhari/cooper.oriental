@@ -31,10 +31,25 @@ links.forEach(e => {
   })
 })
 onscroll = function() {
+  fixedNav();
+  showItem();
+}
+function fixedNav() {
   let nav = document.querySelector("header");
   if(document.documentElement.scrollTop > nav.getBoundingClientRect().height){
-    nav.classList.add("fixed-nav")
+    nav.classList.add("fixed-nav");
   }else {
-    nav.classList.remove("fixed-nav")
+    nav.classList.remove("fixed-nav");
+  }
+}
+function showItem() {
+  let contentText  = document.querySelector(".content-text");
+  let contentTitle = document.querySelector(".content-title");
+  let section      = document.querySelector(".section-img");
+  console.log(section.getBoundingClientRect().top)
+  if(section.getBoundingClientRect().top <  250){
+    contentTitle.classList.add("ikhtafi");
+    contentText.classList.add("ikhtafi");
+    console.log("hamid zeeen");
   }
 }

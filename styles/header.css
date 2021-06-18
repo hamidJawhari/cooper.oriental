@@ -61,6 +61,9 @@ header .header {
   position: relative;
   z-index: 100;
 }
+#close {
+  color: white;
+}
 .header-content .fa-times {
   display: none;
 }
@@ -83,8 +86,6 @@ header .header {
   .header-content ul li a {
     font-size: 11px;
   }
-}
-@media (min-width: 768px) {
   .header-content i {
     display: none;
   }
@@ -130,6 +131,7 @@ header .header {
   padding: 0;
   justify-content: center;
   text-align: center;
+  color: white;
 }
 .fixed-nav {
   position: fixed;

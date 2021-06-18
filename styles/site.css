@@ -3,6 +3,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 :root {
   --mainColor: #00af91;
   --mainFont: "Cairo", sans-serif;
@@ -185,9 +188,9 @@ a {
     font-size: 18px;
   }
   .carousel-control-next,
-.carousel-control-prev {
-  width: 20px;
-}
+  .carousel-control-prev {
+    width: 20px;
+  }
 }
 @media (min-width: 768px) {
   .carousel-caption p {
@@ -284,6 +287,65 @@ a {
 .our-contact-container div span:last-of-type {
   text-transform: uppercase;
 }
+/* sectin image  */
+
+.section-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imgs/n.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+  margin-top: 100px;
+}
+.section-img .content {
+}
+.section-img .content-title {
+  color: white;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transition: transform .6s linear;
+  transform: translateX(-1000px);
+  opacity: 0;
+}
+.section-img .content-title p {
+  font-size: 80px;
+  font-weight: 900;
+  margin-bottom: 100px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+.section-img .content-text {
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--mainColor);
+  width: 300px;
+  direction: rtl;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  transition: transform .6s linear;
+  transform: translateX(1000px);
+  opacity: 0;
+}
+.section-img .content-text span:first-of-type {
+  font-size: 100px;
+  font-weight: 900;
+  margin-left: 7px;
+  display: block;
+}
+.section-img .content-text span:last-of-type {
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  display: block;
+  font-weight: bold;
+}
+.ikhtafi {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+/* end sectin image  */
 /* features */
 .features {
   background-color: var(--mainColor);
@@ -292,7 +354,6 @@ a {
   padding-bottom: 80px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 50px;
 }
 .features .title {
   color: white;
