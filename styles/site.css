@@ -16,43 +16,6 @@ body {
 img {
   max-height: calc(100vh - 100px);
 }
-.carousel-item {
-  position: relative;
-}
-.bg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: background-color 0.3s linear;
-}
-@media (max-width: 768px) {
-  span.carousel-control-prev-icon {
-    color: red;
-  }
-}
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: fit-content;
-  width: fit-content;
-}
-.carousel-caption p {
-  font-size: 15px;
-  font-family: var(--mainFont);
-  white-space: nowrap;
-}
-.carousel-caption p span {
-  margin-right: 10px;
-  color: var(--mainColor);
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: var(--mainFont);
-}
 .title {
   margin: auto;
   width: fit-content;
@@ -104,11 +67,6 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   position: relative;
   gap: 20px;
-}
-.carousel-control-next,
-.carousel-control-prev {
-  width: 15px;
-  margin: 10px;
 }
 .s-box {
   display: flex;
@@ -185,34 +143,6 @@ a {
     padding-right: 50px;
     margin: auto;
   }
-}
-@media (min-width: 500px) {
-  .carousel-caption p {
-    font-size: 18px;
-  }
-  .carousel-control-next,
-  .carousel-control-prev {
-    width: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .carousel-caption p {
-    font-size: 25px;
-  }
-  .carousel-control-next,
-  .carousel-control-prev {
-    width: 25px;
-  }
-}
-@media (min-width: 992px) {
-}
-@media (min-width: 1200px) {
-  .carousel-caption p {
-    font-size: 35px;
-  }
-}
-.carousel-indicators {
-  display: none;
 }
 /* end services */
 
