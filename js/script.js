@@ -1,3 +1,7 @@
+onload = function() {
+  document.querySelector(".load").remove()
+  document.querySelector(".site").style.display = "block";
+}
 let openList  = document.getElementById("open");
 let closeList = document.getElementById("close");
 let menu      = document.querySelector(".links");

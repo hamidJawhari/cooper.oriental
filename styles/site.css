@@ -6,6 +6,9 @@
 body {
   overflow-x: hidden;
 }
+.site {
+  display: none;
+}
 :root {
   --mainColor: #00af91;
   --mainFont: "Cairo", sans-serif;

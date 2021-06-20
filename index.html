@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles/load.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/all.min.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -13,192 +14,199 @@
     <link rel="stylesheet" href="styles/site.css">
     <title>COOPER</title>
     <body>
-      <header>
+      <div class="load d-flex justify-content-center align-items-center">
+        <div class="one d-flex justify-content-center align-items-center">
+          <div class="two"></div>
+        </div>
+      </div>
+      <!-- edn load  -->
+      <div class="site">
+        <header>
+          <div class="container">
+            <div class="header">
+              <div class="header-content">
+                <div class="logo">COOPER<span>ortiental</span></div>
+                <ul class="links">
+                  <li><a href="index.html">الرئيسية</a></li>
+                  <li><a href="#servs">الخدمات</a></li>
+                  <li><a href="#about">حول الشركة</a></li>
+                  <li><a href="#feat">المميزات</a></li>
+                  <li><a href="#">كلمتي</a></li>
+                </ul>
+                <i class="fas fa-bars"  id="open"></i>
+                <i class="fas fa-times" id="close"></i>
+              </div>
+            </div> 
+          </div><!-- container -->
+        </header>
+          <!-- end header -->
+        <div id="slide" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="bg"></div>
+            <img src="slide1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <p><span>cooper</span>من هي شركة </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="bg"></div>
+            <img src="slide2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <p> ما الخدمات التي تقدمها <span>الشركة</span></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="bg"></div>
+            <img src="slide3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <p> <span>cooper</span> لماذا </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+      <section class="services" id="servs">
         <div class="container">
-          <div class="header">
-            <div class="header-content">
-              <div class="logo">COOPER<span>ortiental</span></div>
-              <ul class="links">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="#servs">الخدمات</a></li>
-                <li><a href="#about">حول الشركة</a></li>
-                <li><a href="#feat">المميزات</a></li>
-                <li><a href="#">كلمتي</a></li>
-              </ul>
-              <i class="fas fa-bars"  id="open"></i>
-              <i class="fas fa-times" id="close"></i>
-            </div>
-          </div> 
-        </div><!-- container -->
-      </header>
-        <!-- end header -->
-      <div id="slide" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="bg"></div>
-          <img src="slide1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption  d-md-block">
-            <p><span>cooper</span>من هي شركة </p>
+          <div class="s-heading">
+            <h2 class="title" >الخدمات</h2>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="bg"></div>
-          <img src="slide2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption  d-md-block">
-            <p> ما الخدمات التي تقدمها <span>الشركة</span></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="bg"></div>
-          <img src="slide3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption  d-md-block">
-            <p> <span>cooper</span> لماذا </p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-     </div>
-     <section class="services" id="servs">
-       <div class="container">
-        <div class="s-heading">
-          <h2 class="title" >الخدمات</h2>
-        </div>
-        <div class="s-box-container">
-          <div class="s-box">
-            <div class="bar"></div>
-            <i class="fas fa-phone"></i>
-            <h2 class="h1">المكالمات</h2>
-            <p class="lead">استقبال مكالمات الزبائن في الشركة هي المرحلة الاولى و المهمة بالنسبة لهم ، فهي نقطة البداية في رحلة ارضاء الزبون و استلام طلباته ... </p>
-            <a class="s-btn" href="html/telephone.html">اقرأ المزيد</a>
-          </div>
-          <div class="s-box">
-            <div class="bar"></div>
-            <i class="fas fa-cubes"></i>
-            <h2 class="h1">المخزن</h2>
-            <p class="lead">استقبال مكالمات الزبائن في الشركة هي المرحلة الاولى و المهمة بالنسبة لهم ، فهي نقطة البداية في رحلة ارضاء الزبون و استلام طلباته ... </p>
-            <a class="s-btn" href="#">اقرأ المزيد</a>
-          </div>
-          <div class="s-box">
-            <div class="bar"></div>
-            <i class="fas fa-truck"></i>
-            <h2 class="h1">الشحن</h2>
-            <p class="lead">استقبال مكالمات الزبائن في الشركة هي المرحلة الاولى و المهمة بالنسبة لهم ، فهي نقطة البداية في رحلة ارضاء الزبون و استلام طلباته ... </p>
-            <a class="s-btn" href="#">اقرأ المزيد</a>
-          </div>
-        </div>
-       </div>
-     </section>
-     <div class="section-img d-flex align-items-center">
-       <div class="container">
-        <div class="content  d-flex flex-column align-items-center justify-content-md-between">
-          <div class="content-title">
-            <p>cooper</p>
-          </div>
-          <div class="content-text">
-            <span>36</span>
-            <span>سنة</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, atque?</p>
-          </div>
-        </div>
-       </div>
-     </div>
-     <div id="feat" class="features">
-      <h2 class="title">المميزات</h2>
-      <div class="container">
-        <div class="row">
-          <div class="feat col-sm-12 col-md-6 col-lg-4">
-            <i class="fas fa-globe-africa"></i>
-            <h2>العلاقات</h2>
-            <p>كلنا نعلم أن العلاقات هي العمود الاساسي لأي تجارة لكن ... 
-              لنا أن نتخيل عمر الشركة الذي يزيد عن 35 سنة لندرك أنه كان لها الوقت الكافي لتكوين أقوى العلاقات في المجال  , فكوبر لها علاقات مع عشرات المختبرات ، لتوفير جميع إحتياجات الزبناء .</p>
-          </div>
-          <div class="feat col-sm-12 col-md-6 col-lg-4">
-            <i class="fas fa-crosshairs"></i>
-            <h2>خطة العمل </h2>
-            <p>ربما الشركة تعني ، تجارة ، ربح ، شراكة ، المنتجات و شحن . لكن كل هذا لا يكتمل ولا ينمو أصلا  إلا داخل إطار "خطة عمل" في حالتنا هذه ، 36 سنة رمز كافي لفهم عمق خطة العمل و آلياتها  .</p>
-          </div>
-          <div class="feat col-sm-12 col-md-6 col-lg-4">
-            <i class=" fas fa-users"></i>
-            <h2>الموظفون</h2>
-            <p>عندما تقول " أقدمية ، تطور الخبرات عام بعد عام ، 
-              إحترام مواعيد العمل ، إحترام زملاء العمل ، فريق كامل متكامل يحب عمله و يساعد في تطوره " ،
-              فأنت تتحدث عن موظفي كوبر .</p>
-          </div>
-          <div class="feat col-sm-12 col-md-6 col-lg-4">
-            <i class="fas fa-apple-alt"></i>
-            <h2>Service Name</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="feat col-sm-12 col-md-6 col-lg-4">
-            <i class="fas fa-archway"></i>
-            <h2>Service Name</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="feat col-sm-12 col-md-6 col-lg-4">
-            <i class="far fa-angry"></i>
-            <h2>Service Name</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-      </div>
-     </div><!-- features -->
-     <div id="about" class="about-us d-flex align-items-center">
-       <div class="container">
-         <div class="img-content d-flex flex-column-reverse flex-md-row justify-content-md-between">
-          <div class="our-contact-container d-flex flex-md-column">
-            <div class="phone">
+          <div class="s-box-container">
+            <div class="s-box">
+              <div class="bar"></div>
               <i class="fas fa-phone"></i>
-              <span>0536687894</span>
+              <h2 class="h1">المكالمات</h2>
+              <p class="lead">استقبال مكالمات الزبائن في الشركة هي المرحلة الاولى و المهمة بالنسبة لهم ، فهي نقطة البداية في رحلة ارضاء الزبون و استلام طلباته ... </p>
+              <a class="s-btn" href="html/telephone.html">اقرأ المزيد</a>
             </div>
-            <div class="email">
-              <i class="fas fa-envelope"></i>
-              <span>orientalmedica@menara.ma</span>
+            <div class="s-box">
+              <div class="bar"></div>
+              <i class="fas fa-cubes"></i>
+              <h2 class="h1">المخزن</h2>
+              <p class="lead">استقبال مكالمات الزبائن في الشركة هي المرحلة الاولى و المهمة بالنسبة لهم ، فهي نقطة البداية في رحلة ارضاء الزبون و استلام طلباته ... </p>
+              <a class="s-btn" href="#">اقرأ المزيد</a>
             </div>
-            <div class="address">
-              <i class="fas fa-map-marked-alt"></i>
-              <span>Lot. 109<br>Zone Industrielle - OUJDA</span>
+            <div class="s-box">
+              <div class="bar"></div>
+              <i class="fas fa-truck"></i>
+              <h2 class="h1">الشحن</h2>
+              <p class="lead">استقبال مكالمات الزبائن في الشركة هي المرحلة الاولى و المهمة بالنسبة لهم ، فهي نقطة البداية في رحلة ارضاء الزبون و استلام طلباته ... </p>
+              <a class="s-btn" href="#">اقرأ المزيد</a>
             </div>
           </div>
-           <div class="text">
-            <h2>about cooper</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum cupiditate facere ex impedit cum illo, architecto corporis dicta quisquam id a commodi? Possimus quasi sed amet? Tenetur dolores adipisci accusantium ex ipsam totam placeat consequuntur veritatis reiciendis! Ut, similique?</p>   
-           </div>
-         </div>
-       </div>
-     </div>
-     <section class="parts">
-       <div class="container">
-         <div class="row">
-           <div class="imgs">
-            <img src="Bottu-logo.jpg" class="col-sm-2 col-lg-1"  alt="">
-            <img src="cooper-logo.png" class="col-sm-2 col-lg-1" alt="">
-            <img src="gsk-logo.jpg" class="col-sm-2 col-lg-1" alt="">
-            <img src="novartis-logo.jpg" class="col-sm-2 col-lg-1" alt="">
-            <img src="Sothema-logo.jpg" class="col-sm-2 col-lg-1" alt="">
-            <img src="sun-logo.jpg" class="col-sm-2 col-lg-1" alt="">
-            <img src="Pharmalife-logo.jpg" class="col-sm-2 col-lg-1" alt="">
-            <img src="Pharma-cinq-logo.jpg" class="col-sm-2 col-lg-1" alt="">
-            <img src="novopharma-logo.jpg" class="col-sm-2 col-lg-1" alt="">
-            <img src="Logo_Bayer.svg.png" class="col-sm-2 col-lg-1" alt="">
-           </div>
-         </div>
-       </div>
-     </section>
-     <div class="footer">
-      <span>Designed By Abdelhamid JAWHARI</span>
-      <span class="tel">+212606517700</span>
-     </div>
-
+        </div>
+      </section>
+      <div class="section-img d-flex align-items-center">
+        <div class="container">
+          <div class="content  d-flex flex-column align-items-center justify-content-md-between">
+            <div class="content-title">
+              <p>cooper</p>
+            </div>
+            <div class="content-text">
+              <span>36</span>
+              <span>سنة</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, atque?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="feat" class="features">
+        <h2 class="title">المميزات</h2>
+        <div class="container">
+          <div class="row">
+            <div class="feat col-sm-12 col-md-6 col-lg-4">
+              <i class="fas fa-globe-africa"></i>
+              <h2>العلاقات</h2>
+              <p>كلنا نعلم أن العلاقات هي العمود الاساسي لأي تجارة لكن ... 
+                لنا أن نتخيل عمر الشركة الذي يزيد عن 35 سنة لندرك أنه كان لها الوقت الكافي لتكوين أقوى العلاقات في المجال  , فكوبر لها علاقات مع عشرات المختبرات ، لتوفير جميع إحتياجات الزبناء .</p>
+            </div>
+            <div class="feat col-sm-12 col-md-6 col-lg-4">
+              <i class="fas fa-crosshairs"></i>
+              <h2>خطة العمل </h2>
+              <p>ربما الشركة تعني ، تجارة ، ربح ، شراكة ، المنتجات و شحن . لكن كل هذا لا يكتمل ولا ينمو أصلا  إلا داخل إطار "خطة عمل" في حالتنا هذه ، 36 سنة رمز كافي لفهم عمق خطة العمل و آلياتها  .</p>
+            </div>
+            <div class="feat col-sm-12 col-md-6 col-lg-4">
+              <i class=" fas fa-users"></i>
+              <h2>الموظفون</h2>
+              <p>عندما تقول " أقدمية ، تطور الخبرات عام بعد عام ، 
+                إحترام مواعيد العمل ، إحترام زملاء العمل ، فريق كامل متكامل يحب عمله و يساعد في تطوره " ،
+                فأنت تتحدث عن موظفي كوبر .</p>
+            </div>
+            <div class="feat col-sm-12 col-md-6 col-lg-4">
+              <i class="fas fa-apple-alt"></i>
+              <h2>Service Name</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="feat col-sm-12 col-md-6 col-lg-4">
+              <i class="fas fa-archway"></i>
+              <h2>Service Name</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="feat col-sm-12 col-md-6 col-lg-4">
+              <i class="far fa-angry"></i>
+              <h2>Service Name</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- features -->
+      <div id="about" class="about-us d-flex align-items-center">
+        <div class="container">
+          <div class="img-content d-flex flex-column-reverse flex-md-row justify-content-md-between">
+            <div class="our-contact-container d-flex flex-md-column">
+              <div class="phone">
+                <i class="fas fa-phone"></i>
+                <span>0536687894</span>
+              </div>
+              <div class="email">
+                <i class="fas fa-envelope"></i>
+                <span>orientalmedica@menara.ma</span>
+              </div>
+              <div class="address">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Lot. 109<br>Zone Industrielle - OUJDA</span>
+              </div>
+            </div>
+            <div class="text">
+              <h2>about cooper</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum cupiditate facere ex impedit cum illo, architecto corporis dicta quisquam id a commodi? Possimus quasi sed amet? Tenetur dolores adipisci accusantium ex ipsam totam placeat consequuntur veritatis reiciendis! Ut, similique?</p>   
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="parts">
+        <div class="container">
+          <div class="row">
+            <div class="imgs">
+              <img src="Bottu-logo.jpg" class="col-sm-2 col-lg-1"  alt="">
+              <img src="cooper-logo.png" class="col-sm-2 col-lg-1" alt="">
+              <img src="gsk-logo.jpg" class="col-sm-2 col-lg-1" alt="">
+              <img src="novartis-logo.jpg" class="col-sm-2 col-lg-1" alt="">
+              <img src="Sothema-logo.jpg" class="col-sm-2 col-lg-1" alt="">
+              <img src="sun-logo.jpg" class="col-sm-2 col-lg-1" alt="">
+              <img src="Pharmalife-logo.jpg" class="col-sm-2 col-lg-1" alt="">
+              <img src="Pharma-cinq-logo.jpg" class="col-sm-2 col-lg-1" alt="">
+              <img src="novopharma-logo.jpg" class="col-sm-2 col-lg-1" alt="">
+              <img src="Logo_Bayer.svg.png" class="col-sm-2 col-lg-1" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <span>Designed By Abdelhamid JAWHARI</span>
+        <span class="tel">+212606517700</span>
+      </div>
+      </div>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/script.js"></script>
   </body>
