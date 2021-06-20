@@ -11,12 +11,12 @@
   --mainFont: "Cairo", sans-serif;
 }
 header {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   background-color: var(--mainColor);
-  color: white;
+  color: #fff;
 }
 header .header {
-  padding: 0px 30px;
+  padding: 0 30px;
 }
 .header .header-content {
   display: flex;
@@ -32,7 +32,7 @@ header .header {
 }
 .header-content .logo span {
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 400;
   margin-left: 5px;
 }
 .header .header-content ul {
@@ -42,7 +42,7 @@ header .header {
 }
 .header-content ul li {
   margin-bottom: 40px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .header-content ul li a {
   display: block;
@@ -62,7 +62,7 @@ header .header {
   z-index: 100;
 }
 #close {
-  color: white;
+  color: #fff;
 }
 .header-content .fa-times {
   display: none;
@@ -134,12 +134,12 @@ header .header {
   padding: 0;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 .fixed-nav {
   position: fixed;
   top: 0;
-  background-color: white;
+  background-color: #fff;
   color: var(--mainColor);
   z-index: 1000;
   width: 100%;

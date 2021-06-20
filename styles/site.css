@@ -291,7 +291,7 @@ a {
 
 .section-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../imgs/n.jpg);
+    url(../n.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -340,7 +340,7 @@ a {
   display: block;
   font-weight: bold;
 }
-.ikhtafi {
+.fade-in {
   transform: translateX(0) !important;
   opacity: 1 !important;
 }

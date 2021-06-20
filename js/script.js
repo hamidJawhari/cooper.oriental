@@ -36,22 +36,25 @@ onscroll = function() {
 }
 function fixedNav() {
   let nav = document.querySelector("header");
+  let links = document.querySelectorAll(".header-content ul li a");
+  console.log(links)
   if(document.documentElement.scrollTop > nav.getBoundingClientRect().height){
     nav.classList.add("fixed-nav");
+    links.forEach(link => {
+      link.classList.add("hover-a")
+    })
   }else {
     nav.classList.remove("fixed-nav");
+    links.forEach(link => {
+      link.classList.remove("hover-a")
+    })
   }
 }
 function showItem() {
   let contentText  = document.querySelector(".content-text");
   let contentTitle = document.querySelector(".content-title");
-  let point = 200;
-  console.log(contentTitle.getBoundingClientRect().top);
-  console.log(innerHeight);
-  console.log(innerHeight - point) 
-  if(contentTitle.getBoundingClientRect().top < innerHeight - point){
-    contentTitle.classList.add("ikhtafi");
-    contentText.classList.add("ikhtafi");
-    console.log("hamid hamid hamid hamid hamid hamid hamid")
+  if(contentTitle.getBoundingClientRect().top < innerHeight / 1.3){
+    contentTitle.classList.add("fade-in");
+    contentText.classList.add("fade-in");
   }
 }
