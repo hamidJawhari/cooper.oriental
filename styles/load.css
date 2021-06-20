@@ -13,8 +13,8 @@
   animation: rotate 1s infinite 1s;
 }
 .load .two {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 3px solid;
   border-color: white white white transparent;
@@ -29,4 +29,9 @@
   to {
     transform: rotate(360deg) scaleZ(1);
   }
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
