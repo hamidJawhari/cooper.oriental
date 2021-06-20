@@ -1,13 +1,14 @@
+:root {
+  --mainColor: #00af91;
+  --mainFont: 'Cairo' , sans-serif;
+}
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box
-}
-:root {
-  --mainColor: #00af91;
-  --mainFont: 'Cairo' , sans-serif;
+  -webkit-box-sizing: border-box;
+  font-family: var(--mainFont);
 }
 nav {
   position: relative;
@@ -34,7 +35,6 @@ nav {
   background-color: var(--mainColor);
   padding: 20px;
   direction: rtl;
-  font-family: var(--mainFont);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .content h2 {
@@ -44,7 +44,7 @@ nav {
   text-align: center;
 }
 .content ul li {
-  font-size: 14px;
+  font-size: 12px;
 }
 .content .text p {
   line-height: 1.9;
@@ -58,11 +58,47 @@ nav {
   margin-bottom: 5px;
   margin-top: 5px;
 }
+@media (min-width: 576px) { 
+  .content h2 {
+    font-size: 33px;
+  }
+  .content .text p {
+    font-size: 15px;
+  }
+  .content ul li {
+    font-size: 15px;
+  }
+ }
+
+@media (min-width: 768px) {
+  .content img {
+    width: 300px;
+  }
+  .content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  .content .text{
+    width: 85%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 992px) { 
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) { 
+  .container {
+    width: 75%;
+  }
+}
 .thanks {
   margin-top: 100px;
   margin-bottom: 100px;
   color: var(--mainColor);
-  font-family: var(--mainFont);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   padding: 130px;
   text-align: center;
@@ -97,45 +133,4 @@ nav {
 .thanks .back {
   transform: rotateY(180deg);
   font-size: 14px;
-}
-@media (min-width: 600px) { 
-  .content h2 {
-    font-size: 33px;
-  }
-  .content .text p {
-    font-size: 15px;
-  }
-  .content ul li {
-    font-size: 15px;
-  }
-  .thanks .back {
-    font-size: 16px;
-  }
- }
-
-@media (min-width: 768px) {
-  .content img {
-    width: 300px;
-  }
-  .content h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-  }
-  .content .text{
-    width: 85%;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@media (min-width: 992px) { 
-  .container {
-    width: 80%;
-  }
-}
-
-@media (min-width: 1200px) { 
-  .container {
-    width: 75%;
-  }
 }
