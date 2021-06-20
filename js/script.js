@@ -18,7 +18,6 @@ closeList.addEventListener("click", function(){
   openList.classList.toggle("hide");
   closeList.classList.toggle("show");
 })
-
 window.onresize = function() {
   let width = window.innerWidth;
   if(width > 768) {

@@ -307,8 +307,8 @@ a {
   display: flex;
   align-items: center;
   width: fit-content;
-  transition: transform 1s linear;
-  transform: translateX(-900px);
+  transition: .7s linear;
+  transform: translateX(-300px);
   opacity: 0;
 }
 .section-img .content-title p {
@@ -326,8 +326,8 @@ a {
   direction: rtl;
   text-align: center;
   background-color: rgb(255, 255, 255);
-  transition: transform 1s linear;
-  transform: translateX(900px);
+  transition: .7s linear;
+  transform: translateX(300px);
   opacity: 0;
 }
 .section-img .content-text span:first-of-type {
