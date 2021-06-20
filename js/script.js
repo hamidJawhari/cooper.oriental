@@ -37,7 +37,6 @@ onscroll = function() {
 function fixedNav() {
   let nav = document.querySelector("header");
   let links = document.querySelectorAll(".header-content ul li a");
-  console.log(links)
   if(document.documentElement.scrollTop > nav.getBoundingClientRect().height){
     nav.classList.add("fixed-nav");
     links.forEach(link => {
