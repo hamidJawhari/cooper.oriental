@@ -1,5 +1,6 @@
 window.onload = function() {
-  document.querySelector(".load").remove();
+  let load = document.querySelector(".load");
+  document.body.removeChild(load);
   document.querySelector(".site").style.display = "block";
 }
 let openList  = document.getElementById("open");
