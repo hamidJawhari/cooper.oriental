@@ -1,19 +1,18 @@
-
 /* 1 */
 :root {
   --mainColor: #00af91;
   --mainFont: "Cairo", sans-serif;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--mainFont);
 }
 /* 2 */
-.slider{
-	position: relative;
-	height: 50vh;
+.slider {
+  position: relative;
+  height: 50vh;
   width: 100%;
 }
 .myslide {
@@ -34,25 +33,27 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
-.prev, .next{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	font-size: 20px;
-	padding: 15px;
-	cursor: pointer;
-	color: #fff;
-	transition: 0.1s;
-	user-select: none;
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.1s;
+  user-select: none;
 }
-.prev:hover, .next:hover{
-	color: var(--mainColor); /* blue */
+.prev:hover,
+.next:hover {
+  color: var(--mainColor); /* blue */
 }
-.next{
-	right: 5px;
+.next {
+  right: 5px;
 }
 .prev {
   left: 5px;
@@ -66,32 +67,41 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* /muslide add fade */
 
 /* 3 */
 .txt {
-	position: absolute;
-	color: #fff;
-	letter-spacing: 2px;
-	line-height: 35px;
+  position: absolute;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 35px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-	z-index: 3;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 .txt p {
-	font-weight: bold;
-	font-size: 14px;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
 }
-@media (min-width:576px) {
+@media (min-width: 576px) {
   .slider {
     height: 60vh;
   }
@@ -99,7 +109,7 @@
     font-size: 25px;
   }
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .slider {
     height: 70vh;
   }
@@ -107,15 +117,15 @@
     font: 33px;
   }
 }
-@media (min-width:992px) {
- .slider {
-   height: 80vh;
- }
- .slider .btns a {
-   font-size: 40px;
- }
+@media (min-width: 992px) {
+  .slider {
+    height: 80vh;
+  }
+  .slider .btns a {
+    font-size: 40px;
+  }
 }
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .slider {
     height: calc(100vh - 100px);
   }

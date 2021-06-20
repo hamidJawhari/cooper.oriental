@@ -13,9 +13,7 @@ body {
   --mainColor: #00af91;
   --mainFont: "Cairo", sans-serif;
 }
-img {
-  max-height: calc(100vh - 100px);
-}
+
 .title {
   margin: auto;
   width: fit-content;
@@ -348,20 +346,44 @@ a {
 /* end features */
 .parts .imgs {
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
+/* .parts img.md {
+  width: 100%;
+} */
 @media (max-width: 576px) {
-  .parts img {
-    width: 70px;
-    margin-right: 10px;
+  .lg,
+  .sm,
+  .md {
+    display: none;
   }
 }
-@media screen and (min-width: 500px) {
-  .parts img {
-    margin-bottom: 20px;
-    margin-left: 10px;
+@media (min-width: 576px) {
+  .sm {
+    display: block;
+  }
+  .lg,
+  .md,
+  .xs {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .md {
+    display: block;
+  }
+  .lg,
+  .sm,
+  .xs {
+    display: none;
   }
 }
 @media screen and (min-width: 992px) {
+  .lg {
+    display: block;
+  }
+  .sm,
+  .md,
+  .xs {
+    display: none;
+  }
 }
