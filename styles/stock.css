@@ -13,7 +13,6 @@
 .tables .first-table {
   transform: rotateY(-30deg);
   transform-origin: right;
-
 }
 .tables .last-table {
   transform: rotateY(30deg);
@@ -33,8 +32,36 @@
   font-weight: bold;
   position: relative;
 }
+.tables table .first-row td::before {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  color: white;
+  transform: translateX(-50%);
+}
 .tables .first-table .first-row td {
   counter-increment: tr-counter;
+}
+.tables .first-table .first-row td::before {
+  content: counter(tr-counter);
+}
+.tables .first-table .first-row td:last-of-type::before {
+  content: "...";
+}
+.tables .last-table .first-row td:last-of-type::before {
+  content: "1";
+}
+.tables .last-table .first-row td:nth-of-type(4)::before {
+  content: "2";
+}
+.tables .last-table .first-row td:nth-of-type(3)::before {
+  content: "3";
+}
+.tables .last-table .first-row td:nth-of-type(2)::before {
+  content: "4";
+}
+.tables .last-table .first-row td:first-of-type::before {
+  content: "...";
 }
 .tables table tr {
   position: relative;
@@ -64,34 +91,6 @@
 .tables .first-table tr:last-of-type::before {
   content: "A5";
 }
-.tables table .first-row td::before {
-  position: absolute;
-  left: 50%;
-  top: -30px;
-  color: white;
-  transform: translateX(-50%);
-}
-.tables .first-table .first-row td::before {
-  content: counter(tr-counter);
-}
-.tables .first-table .first-row td:last-of-type::before {
-  content: "...";
-}
-.tables .last-table .first-row td:last-of-type::before {
-  content: "1";
-}
-.tables .last-table .first-row td:nth-of-type(4)::before {
-  content: "2";
-}
-.tables .last-table .first-row td:nth-of-type(3)::before {
-  content: "3";
-}
-.tables .last-table .first-row td:nth-of-type(2)::before {
-  content: "4";
-}
-.tables .last-table .first-row td:first-of-type::before {
-  content: "...";
-}
 .tables .last-table tr::before {
   content: "A9";
 }
@@ -103,4 +102,46 @@
 }
 .tables .last-table tr:last-of-type::before {
   content: "A6";
+}
+@media (min-width: 576px) {
+ .tables table {
+   font-size: 12px;
+ }
+}
+@media (min-width: 768px) {
+  .tables {
+    perspective: 600px;
+  }
+  .tables table {
+    font-size: 16px;
+  }
+  .tables table caption {
+    margin-bottom: 40px;
+  }
+  .tables .first-table {
+    transform: rotateY(-60deg);
+  }
+  .tables .last-table {
+    transform: rotateY(60deg);
+  }
+  .tables table td {
+    padding: 6px;
+  }
+  .tables table .first-row td::before {
+    top: -40px;
+  }
+  .tables .first-table tr::before {
+    right: -40px;
+  }
+  .tables .last-table tr::before {
+    left: -40px;
+  }
+}
+@media (min-width: 992px) {
+  .tables table {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+
 }
