@@ -83,7 +83,6 @@ a {
     opacity: 1;
   }
 }
-
 @keyframes fade {
   from {
     opacity: 0.8;
@@ -92,9 +91,6 @@ a {
     opacity: 1;
   }
 }
-/* /muslide add fade */
-
-/* 3 */
 .slider .txt {
   position: absolute;
   color: #fff;
@@ -216,7 +212,7 @@ a {
   align-items: center;
   color: var(--mainColor);
   background-color: white;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 15px;
 }
 .bar {
@@ -442,9 +438,6 @@ a {
 .parts .imgs {
   text-align: center;
 }
-/* .parts img.md {
-  width: 100%;
-} */
 @media (max-width: 576px) {
   .lg,
   .sm,
@@ -482,7 +475,6 @@ a {
     display: none;
   }
 }
-
 .title {
   margin: auto;
   width: fit-content;
@@ -512,7 +504,6 @@ a {
     width: 350px;
   }
 }
-
 @media (min-width: 992px) {
   .title {
     font-size: 40px;

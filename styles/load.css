@@ -2,36 +2,23 @@
   height: 100vh;
   width: 100%;
   background-color: #00af91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .load .one {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 3px solid;
-  border-color: white white white transparent;
-  transform-style: preserve-3d;
-  animation: rotate 1s infinite 1s;
-}
-.load .two {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 3px solid;
   border-color: white white white transparent;
-  transform-style: preserve-3d;
-  animation: rotate 1s infinite linear;
+  animation: rotate .7s infinite linear;
 }
-
 @keyframes rotate {
   from {
-    transform: rotate(0) scaleZ(0);
+    transform: rotate(0);
   }
   to {
-    transform: rotate(360deg) scaleZ(1);
+    transform: rotate(360deg);
   }
-}
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
