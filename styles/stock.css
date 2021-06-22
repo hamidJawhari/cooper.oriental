@@ -1,0 +1,106 @@
+.tables {
+  perspective: 200px;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
+.tables table {
+  border-spacing: 0;
+  margin-top: 50px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.tables .first-table {
+  transform: rotateY(-30deg);
+  transform-origin: right;
+
+}
+.tables .last-table {
+  transform: rotateY(30deg);
+  transform-origin: left;
+  left: 0px;
+}
+.tables table caption {
+  margin-bottom: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.tables table td {
+  background-color: white;
+  padding: 2px;
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  font-weight: bold;
+  position: relative;
+}
+.tables .first-table .first-row td {
+  counter-increment: tr-counter;
+}
+.tables table tr {
+  position: relative;
+}
+.tables table tr::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+.tables .first-table tr::before {
+  content: "A1";
+  right: -20px;
+}
+.tables .last-table tr::before {
+  left: -20px;
+}
+.tables .first-table tr:nth-of-type(2)::before {
+  content: "A2";
+}
+.tables .first-table tr:nth-of-type(3)::before {
+  content: "A3";
+}
+.tables .first-table tr:nth-of-type(4)::before {
+  content: "A4";
+}
+.tables .first-table tr:last-of-type::before {
+  content: "A5";
+}
+.tables table .first-row td::before {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  color: white;
+  transform: translateX(-50%);
+}
+.tables .first-table .first-row td::before {
+  content: counter(tr-counter);
+}
+.tables .first-table .first-row td:last-of-type::before {
+  content: "...";
+}
+.tables .last-table .first-row td:last-of-type::before {
+  content: "1";
+}
+.tables .last-table .first-row td:nth-of-type(4)::before {
+  content: "2";
+}
+.tables .last-table .first-row td:nth-of-type(3)::before {
+  content: "3";
+}
+.tables .last-table .first-row td:nth-of-type(2)::before {
+  content: "4";
+}
+.tables .last-table .first-row td:first-of-type::before {
+  content: "...";
+}
+.tables .last-table tr::before {
+  content: "A9";
+}
+.tables .last-table tr:nth-of-type(2)::before {
+  content: "A8";
+}
+.tables .last-table tr:nth-of-type(3)::before {
+  content: "A7";
+}
+.tables .last-table tr:last-of-type::before {
+  content: "A6";
+}
