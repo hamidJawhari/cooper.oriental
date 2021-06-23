@@ -40,7 +40,7 @@
   left: 0px;
 }
 .tables table caption {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -50,87 +50,12 @@
   color: var(--mainColor);
   border: 1px solid var(--mainColor);
   font-weight: bold;
-  position: relative;
 }
-.tables table .first-row td::before {
-  position: absolute;
-  left: 50%;
-  top: -30px;
+.tables table .bg-trans,
+.tables table .first-row td {
+  background-color: transparent;
   color: white;
-  transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-}
-.tables .first-table .first-row td {
-  counter-increment: tr-counter;
-}
-.tables .first-table .first-row td::before {
-  content: counter(tr-counter);
-}
-.tables .first-table .first-row td:last-of-type::before {
-  content: "...";
-}
-.tables .last-table .first-row td:last-of-type::before {
-  content: "1";
-}
-.tables .last-table .first-row td:nth-of-type(4)::before {
-  content: "2";
-}
-.tables .last-table .first-row td:nth-of-type(3)::before {
-  content: "3";
-}
-.tables .last-table .first-row td:nth-of-type(2)::before {
-  content: "4";
-}
-.tables .last-table .first-row td:first-of-type::before {
-  content: "...";
-}
-.tables .first-table .row,
-.tables .last-table .row {
-  position: relative;
-}
-.tables .first-table .row::before,
-.tables .last-table .row::before {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  font-weight: bold;
-}
-.tables .first-table .row::before {
-  content: "A1";
-  right: -20px;
-}
-.tables .first-table .row:nth-of-type(2)::before {
-  content: "A2";
-}
-.tables .first-table .row:nth-of-type(3)::before {
-  content: "A3";
-}
-.tables .first-table .row:nth-of-type(4)::before {
-  content: "A4";
-}
-.tables .first-table .row:last-of-type::before {
-  content: "A5";
-}
-.tables .last-table .row::before {
-  left: -20px;
-}
-.tables .last-table .row:first-of-type::before {
-  content: "A9";
-}
-.tables .last-table .row:nth-of-type(2)::before {
-  content: "A8";
-}
-.tables .last-table .row:nth-of-type(3)::before {
-  content: "A7";
-}
-.tables .last-table .row:last-of-type::before {
-  content: "A6";
+  text-align: center;
 }
 @media (min-width: 576px) {
  .tables table {
@@ -148,7 +73,7 @@
     font-size: 16px;
   }
   .tables table caption {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .tables .first-table {
     transform: rotateY(-60deg);
@@ -166,15 +91,6 @@
   }
   .tables table td {
     padding: 6px;
-  }
-  .tables table .first-row td::before {
-    top: -40px;
-  }
-  .tables .first-table .row::before {
-    right: -40px;
-  }
-  .tables .last-table .row::before {
-    left: -40px;
   }
 }
 @media (min-width: 992px) {
