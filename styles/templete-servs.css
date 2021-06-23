@@ -12,21 +12,15 @@
 }
 .container {
   padding: 0px 10px;
-  margin: auto;
 }
 .content {
   margin-top: 100px;
   margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
-.content img {
+.content .img {
   width: 200px;
+  margin: auto;
   margin-bottom: 100px;
-  position: relative;
-  right: 10px;
 }
 .content .text {
   color: white;

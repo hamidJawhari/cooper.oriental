@@ -119,8 +119,7 @@ p.under-line {
   border-spacing: 1px;
   border-color: red;
   background-color: white;
-  white-space: nowrap;
-  font-size: 12px;
+  font-size: 10px;
 }
 .exp-table table td {
   background-color: var(--mainColor);
@@ -135,6 +134,7 @@ p.under-line {
 }
 .exp-table table th {
   color: var(--mainColor);
+  white-space: nowrap;
 }
 @media (min-width:576px) {
   .exp-table table {
