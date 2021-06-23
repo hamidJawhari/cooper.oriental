@@ -38,6 +38,7 @@
   -moz-transform-origin: left;
   -o-transform-origin: left;
   left: 0px;
+  top: 3px;
 }
 .tables table caption {
   margin-bottom: 5px;
@@ -50,6 +51,9 @@
   color: var(--mainColor);
   border: 1px solid var(--mainColor);
   font-weight: bold;
+}
+.tables .last-table td {
+  padding: 5px;
 }
 .tables table .bg-trans,
 .tables table .first-row td {
