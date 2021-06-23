@@ -87,11 +87,12 @@
 .tables .last-table .first-row td:first-of-type::before {
   content: "...";
 }
-.tables .first-table * tr,
-.tables .last-table * tr {
+.tables .first-table .row,
+.tables .last-table .row {
   position: relative;
 }
-.tables table * tr::before {
+.tables .first-table .row::before,
+.tables .last-table .row::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -100,35 +101,35 @@
   -o-transform: translateY(-50%);
   font-weight: bold;
 }
-.tables .first-table * tr::before {
+.tables .first-table .row::before {
   content: "A1";
   right: -20px;
 }
-.tables .first-table tr:nth-of-type(2)::before {
+.tables .first-table .row:nth-of-type(2)::before {
   content: "A2";
 }
-.tables .first-table tr:nth-of-type(3)::before {
+.tables .first-table .row:nth-of-type(3)::before {
   content: "A3";
 }
-.tables .first-table tr:nth-of-type(4)::before {
+.tables .first-table .row:nth-of-type(4)::before {
   content: "A4";
 }
-.tables .first-table tr:last-of-type::before {
+.tables .first-table .row:last-of-type::before {
   content: "A5";
 }
-.tables .last-table * tr::before {
+.tables .last-table .row::before {
   left: -20px;
 }
-.tables .last-table tr:first-of-type::before {
+.tables .last-table .row:first-of-type::before {
   content: "A9";
 }
-.tables .last-table tr:nth-of-type(2)::before {
+.tables .last-table .row:nth-of-type(2)::before {
   content: "A8";
 }
-.tables .last-table tr:nth-of-type(3)::before {
+.tables .last-table .row:nth-of-type(3)::before {
   content: "A7";
 }
-.tables .last-table tr:last-of-type::before {
+.tables .last-table .row:last-of-type::before {
   content: "A6";
 }
 @media (min-width: 576px) {
@@ -169,10 +170,10 @@
   .tables table .first-row td::before {
     top: -40px;
   }
-  .tables .first-table * tr::before {
+  .tables .first-table .row::before {
     right: -40px;
   }
-  .tables .last-table * tr::before {
+  .tables .last-table .row::before {
     left: -40px;
   }
 }
