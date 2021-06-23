@@ -11,7 +11,7 @@
   justify-content: center;
   font-size: 10px;
   font-family: var(--mainFont);
-  width: 100%;
+  width: 100vw;
 }
 .footer span {
   white-space: nowrap;
@@ -28,9 +28,6 @@
   }
 }
 @media (min-width:700px) {
-  .footer {
-    font-size: 18px;
-  }
   .tel {
     margin-left: 100px;
   }

@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .tables {
   perspective: 200px;
   -ms-perspective: 200px;
@@ -15,7 +18,6 @@
   -moz-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
-  position: relative;
 }
 .tables .first-table {
   transform: rotateY(-30deg);
@@ -38,8 +40,6 @@
   -ms-transform-origin: left;
   -moz-transform-origin: left;
   -o-transform-origin: left;
-  left: 0px;
-  top: 3px;
 }
 .tables table caption {
   margin-bottom: 5px;
@@ -131,7 +131,7 @@ p.under-line {
 }
 .exp-table table th,
 .exp-table table td {
-  padding: 4px;
+  padding: 3px;
 }
 .exp-table table th {
   color: var(--mainColor);
