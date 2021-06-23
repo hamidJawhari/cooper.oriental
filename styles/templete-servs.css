@@ -44,7 +44,8 @@ nav {
   margin-bottom: 30px;
   text-align: center;
 }
-.content ul li {
+.content ul li,
+.content ul {
   font-size: 12px;
 }
 .content .text p {
@@ -66,7 +67,8 @@ nav {
   .content .text p {
     font-size: 15px;
   }
-  .content ul li {
+  .content ul li,
+  .content ul {
     font-size: 15px;
   }
  }

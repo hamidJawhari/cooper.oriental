@@ -6,10 +6,11 @@
   display: flex;
   justify-content: center;
   font-size: 10px;
+  margin-bottom: 20px;
 }
 .tables table {
-  border-spacing: 0;
-  margin-top: 50px;
+  border-spacing: 1px;
+  margin-top: 20px;
   transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
@@ -49,7 +50,6 @@
   background-color: white;
   padding: 2px;
   color: var(--mainColor);
-  border: 1px solid var(--mainColor);
   font-weight: bold;
 }
 .tables .last-table td {
@@ -96,12 +96,60 @@
   .tables table td {
     padding: 6px;
   }
+  .tables .last-table {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 @media (min-width: 992px) {
   .tables table {
     font-size: 20px;
   }
 }
-@media (min-width: 1200px) {
+p.under-line {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.exp-table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.exp-table table {
+  margin: auto;
+  border-spacing: 1px;
+  border-color: red;
+  background-color: white;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.exp-table table td {
+  background-color: var(--mainColor);
+  text-align: center;
+}
+.exp-table table td:first-of-type {
+  text-align: left;
+}
+.exp-table table th,
+.exp-table table td {
+  padding: 4px;
+}
+.exp-table table th {
+  color: var(--mainColor);
+}
+@media (min-width:576px) {
+  .exp-table table {
+    font-size: 15px;
+  }
+}
+@media (min-width:768px) {
+  .exp-table table td,
+  .exp-table table th {
+    padding: 10px;
+  }
+}
+@media (min-width:992px) {
+
+}
+@media (min-width:1200px) {
 
 }
