@@ -1,5 +1,8 @@
 .tables {
   perspective: 200px;
+  -ms-perspective: 200px;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
   display: flex;
   justify-content: center;
   font-size: 10px;
@@ -63,21 +66,22 @@
 .tables .last-table .first-row td:first-of-type::before {
   content: "...";
 }
-.tables table tr {
+.tables .first-table * tr,
+.tables .last-table * tr {
   position: relative;
 }
-.tables table tr::before {
+.tables table * tr::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   font-weight: bold;
 }
-.tables .first-table tr::before {
+.tables .first-table * tr::before {
   content: "A1";
   right: -20px;
-}
-.tables .last-table tr::before {
-  left: -20px;
 }
 .tables .first-table tr:nth-of-type(2)::before {
   content: "A2";
@@ -91,7 +95,10 @@
 .tables .first-table tr:last-of-type::before {
   content: "A5";
 }
-.tables .last-table tr::before {
+.tables .last-table * tr::before {
+  left: -20px;
+}
+.tables .last-table tr:first-of-type::before {
   content: "A9";
 }
 .tables .last-table tr:nth-of-type(2)::before {
@@ -111,6 +118,9 @@
 @media (min-width: 768px) {
   .tables {
     perspective: 600px;
+    -ms-perspective: 600px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
   }
   .tables table {
     font-size: 16px;
@@ -120,9 +130,15 @@
   }
   .tables .first-table {
     transform: rotateY(-60deg);
+    -moz-transform: rotateY(-60deg);
+    -o-transform: rotateY(-60deg);
+    -webkit-transform: rotateY(-60deg);
   }
   .tables .last-table {
     transform: rotateY(60deg);
+    -moz-transform: rotateY(60deg);
+    -o-transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg);
   }
   .tables table td {
     padding: 6px;
@@ -130,10 +146,10 @@
   .tables table .first-row td::before {
     top: -40px;
   }
-  .tables .first-table tr::before {
+  .tables .first-table * tr::before {
     right: -40px;
   }
-  .tables .last-table tr::before {
+  .tables .last-table * tr::before {
     left: -40px;
   }
 }
