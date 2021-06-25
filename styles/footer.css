@@ -11,7 +11,7 @@
   justify-content: center;
   font-size: 10px;
   font-family: var(--mainFont);
-  width: 100vw;
+  width: 100%;
 }
 .footer span {
   white-space: nowrap;
