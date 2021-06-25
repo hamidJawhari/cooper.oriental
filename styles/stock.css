@@ -106,10 +106,6 @@ body {
     font-size: 20px;
   }
 }
-p.under-line {
-  text-decoration: underline;
-  font-weight: bold;
-}
 .exp-table {
   margin-top: 20px;
   margin-bottom: 20px;

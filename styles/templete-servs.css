@@ -93,7 +93,7 @@
   }
 }
 .thanks {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   margin-top: 100px;
   color: var(--mainColor);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -130,4 +130,9 @@
 .thanks .back {
   transform: rotateY(180deg);
   font-size: 14px;
+  padding: 5px;
+}
+p.under-line {
+  text-decoration: underline;
+  font-weight: bold;
 }

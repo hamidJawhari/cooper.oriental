@@ -9,12 +9,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
   font-family: var(--mainFont);
   width: 100%;
 }
 .footer span {
   white-space: nowrap;
+  font-size: 12px;
+}
+@media (min-width:768px){
+  .footer span {
+    font-size: 15px;
+  }
 }
 .tel {
   margin-left: 40px;
