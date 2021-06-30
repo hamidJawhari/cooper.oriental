@@ -160,12 +160,6 @@ a {
   margin: 5px;
   text-align: center;
 }
-.s-box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  position: relative;
-  gap: 20px;
-}
 .s-box {
   display: flex;
   flex-direction: column;
@@ -173,7 +167,7 @@ a {
   align-items: center;
   border-radius: 10px;
   padding: 20px 25px;
-  height: 410px;
+  min-height: 410px;
   box-sizing: border-box;
   position: relative;
   color: var(--mainColor);
@@ -181,6 +175,7 @@ a {
   border: 1px solid var(--mainColor);
   cursor: pointer;
   transition: all ease 0.3s;
+  margin-bottom: 20px;
 }
 .s-box:hover {
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
@@ -189,6 +184,7 @@ a {
 }
 .s-box i {
   font-size: 50px;
+  margin-top: 10px;
 }
 .s-box .h1 {
   letter-spacing: 1px;
