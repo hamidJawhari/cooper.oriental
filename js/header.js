@@ -13,9 +13,6 @@ function fixedNav() {
     })
   }
 }
-onscroll = function () {
-  fixedNav();
-}
 let openList = document.getElementById("open");
 let closeList = document.getElementById("close");
 let menu = document.querySelector(".links");
@@ -47,3 +44,22 @@ links.forEach(e => {
     openList.classList.remove("hide");
   })
 })
+// scroll to top function
+let btn = document.querySelector(".to-top");
+btn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+function toTop() {
+  if (document.documentElement.scrollTop > window.innerHeight / 2) {
+    btn.classList.add("active")
+  } else {
+    btn.classList.remove("active")
+  }
+}
+onscroll = function () {
+  fixedNav();
+  toTop();
+}

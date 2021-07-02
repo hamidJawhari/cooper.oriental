@@ -28,7 +28,6 @@ function resetTimer() {
 	timer = setInterval(autoSlide, 3000);
 }
 function slidefun(n) {
-
 	let i;
 	for (i = 0; i < myslide.length; i++) {
 		myslide[i].style.display = "none";
@@ -58,5 +57,6 @@ function showItem() {
 }
 onscroll = function () {
 	showItem();
-	fixedNav()
+	fixedNav();
+	toTop();
 }
